@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonte em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body {
+            font-family: "Work Sans", Arial, Helvetica, sans-serif;
+            /* Medidas Absolutas 
+            cm, mm, in(polegadas), px, pt, pc
+            
+            Medidas Relativas
+            em(altura do M maiusculo de uma fonte), ex, rem, vw, vh, %
+            16px geralmente = 1em
+            */
+            font-size: 1em;
+
+            /* lighter normal bolder */
+        }
+
+        h1 {
+           
+           /* shorthand font
+           - font-style -> font-weight -> font-size -> font-family 
+           
+           font-family: "Work Sans", sans-serif;
+           font-weight: bolder;
+           font-size: 3em;
+           font-style: italic;
+           */
+           font: italic bolder 3em "Work Sans", sans-serif;
+        }
+
+        h2 {
+            font: bold 2em "Work Sans";
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, et. Eligendi dolorem nostrum ullam deleniti consectetur similique reprehenderit earum? Ipsam doloribus dolorum veritatis eum facere magnam ducimus. Sint, incidunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam minima repellendus aperiam in facilis corrupti odit adipisci error ab debitis dicta sit, numquam quod aliquam magni amet alias, quia rem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat labore laudantium praesentium qui harum adipisci, error nulla? Aut exercitationem officia porro vel magni atque sit similique fugit necessitatibus possimus.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam voluptates voluptate nobis quam? Inventore vel ipsa possimus ipsum ducimus, sit magni hic iusto distinctio! Officia neque deserunt mollitia perspiciatis earum?</p>
+    
+</body>
+</html>

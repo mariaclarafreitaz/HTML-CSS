@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flexível</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-size: 20px;
+        }
+        h1 {
+            color: cornflowerblue;
+        }
+        p {
+            color: dodgerblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Voce está vendo a imagem completa? Experimente ampliar o tamnho da sua janela para aproveitar a melhor experiencia.</p>
+
+    <picture>
+        <source media="(max-width: 740px)" srcset="midias/fotomontanhap.png" type="image/png">
+        <source media="(max-width: 1200px)" srcset="midias/fotomontanham.png" type="image/png">
+        <img src="midias/fotomontanhag.png" alt="Imagem flexivel">
+    </picture>
+    <p>Veja essa outra imagem tambem!</p>
+    <picture>
+        <source media="(max-width: 600px)" srcset="midias/canarinho-p.png" type="image/png">
+        <source media="(max-width: 800px)" srcset="midias/canarinho-m.png" type="image/png">
+        <img src="midias/canarinho-g.png" alt="Imagem flexivel">
+    </picture>
+</body>
+</html>
