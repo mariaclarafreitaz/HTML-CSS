@@ -10,12 +10,13 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom, #e72027, #e0070e, #bd0208);
+    background: red url('papel\ de\ parede\ nata.jpg') center center no-repeat;
+    background-size: cover;
 }
 
 main {
     background-color: white;
-    box-shadow: 5px 5px 15px #bd0208;
+    box-shadow: 5px 5px 15px #000a31;
     border-radius: 20px;
     width: 600px;
     padding: 10px;
@@ -30,7 +31,7 @@ h1 {
 }
 
 h2 {
-    color: #018524;
+    color: #F00008;
 }
 
 p {
