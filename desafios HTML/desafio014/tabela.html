@@ -36,19 +36,19 @@
     <table>
         <thead>
             <tr>
-                <th rowspan="2" class="titulo">Área</th>
-                <th rowspan="2" class="titulo">Disciplina</th>
-                <th colspan="2" class="titulo">Notas</th>
-                <th rowspan="2" class="titulo">Média</th>
+                <th rowspan="2" class="titulo" scope="col">Área</th>
+                <th rowspan="2" class="titulo" scope="col">Disciplina</th>
+                <th colspan="2" class="titulo" scope="colgroup">Notas</th>
+                <th rowspan="2" class="titulo" scope="col">Média</th>
             </tr>
             <tr>
-                <th class="titulo">Nota 1</th>
-                <th class="titulo">Nota 2</th>
+                <th class="titulo" scope="col">Nota 1</th>
+                <th class="titulo" scope="col">Nota 2</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
                 <td>Matemática</td>
                 <td>8.0</td>
                 <td>9.5</td>
@@ -73,11 +73,11 @@
                 <td>9,5</td>
             </tr>
             <tr>
-                <th colspan="4" style="text-align: left;" class="titulo">Média de Exatas</th>
+                <th colspan="4" style="text-align: left;" class="titulo" scope="row">Média de Exatas</th>
                 <td class="dado">16</td>
             </tr>
             <tr>
-                <th rowspan="2">Humanas</th>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
                 <td>História</td>
                 <td>7.0</td>
                 <td>6.0</td>
@@ -90,7 +90,7 @@
                 <td>6.0</td>
             </tr>
             <tr>
-                <th colspan="4" style="text-align: left;" class="titulo">Média de Humanas</th>
+                <th colspan="4" style="text-align: left;" class="titulo" scope="row">Média de Humanas</th>
                 <td class="dado">6.0</td>
             </tr>
 
