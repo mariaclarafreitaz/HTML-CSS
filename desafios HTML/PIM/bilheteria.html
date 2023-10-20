@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilheteria Museu</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #0f3ea4;
+        }
+
+        main {
+            background-color: white;
+            box-shadow: 5px 5px 15px #080338;
+            width: 600px;
+            padding: 10px;
+            margin: auto;
+            border-radius: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        a {
+            display: block;
+            background-color: rgb(37, 147, 244);
+            padding: 20px;
+            text-align: center;
+            font-weight: bolder;
+            text-decoration: none;
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>BILHETERIA MUSEU MULTITEMÁTICO</h1>
+        <form autocomplete="off" action="cadastro.php" method="post">
+            <p><label for="inome">Nome:</label> 
+                <input type="text" name="nome" id="inome"></p>
+            <p><label for="isobrenome">Sobrenome:</label> 
+                <input type="text" name="sobrenome" id="isobrenome"></p>
+            <p><label for="idade">Idade:</label>
+               <input type="text" name="idade" id="idade"></p>
+            <h2>Escolha o tema que deseja visitar:</h2>
+            <ul>
+                <li>100 anos da semana da Arte moderna</li>
+                <li>150 anos de Santos Dumont</li>
+                <li>Jogos Olímpicos de Paris 2024</li>
+                <li>Tema a definir</li>
+            </ul>
+            <p><label for="itema">Tema:</label>
+               <input type="text" name="tema" id="itema" size="25"></p>
+            <h2>Selecione o tipo de entrada:</h2>
+            <ul>
+                <li>Entrada cheia</li>
+                <li>Meia entrada</li>
+                <li>Isenção</li>
+            </ul>
+            <p><label for="ientrada">Entrada:</label>
+               <input type="text" name="entrada" id="ientrada"></p>
+            <a href="ingresso.html">ENVIAR</a>
+        </form>
+    </main>
+</body>
+</html>
