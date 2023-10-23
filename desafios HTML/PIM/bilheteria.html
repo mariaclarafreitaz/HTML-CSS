@@ -14,11 +14,11 @@
             background-color: #0f3ea4;
         }
 
-        main {
+        div {
             background-color: white;
             box-shadow: 5px 5px 15px #080338;
             width: 600px;
-            padding: 10px;
+            padding: 20px;
             margin: auto;
             border-radius: 20px;
             position: absolute;
@@ -49,33 +49,55 @@
 </head>
 <body>
     <main>
-        <h1>BILHETERIA MUSEU MULTITEMÁTICO</h1>
-        <form autocomplete="off" action="cadastro.php" method="post">
-            <p><label for="inome">Nome:</label> 
-                <input type="text" name="nome" id="inome"></p>
-            <p><label for="isobrenome">Sobrenome:</label> 
-                <input type="text" name="sobrenome" id="isobrenome"></p>
-            <p><label for="idade">Idade:</label>
-               <input type="text" name="idade" id="idade"></p>
-            <h2>Escolha o tema que deseja visitar:</h2>
-            <ul>
-                <li>100 anos da semana da Arte moderna</li>
-                <li>150 anos de Santos Dumont</li>
-                <li>Jogos Olímpicos de Paris 2024</li>
-                <li>Tema a definir</li>
-            </ul>
-            <p><label for="itema">Tema:</label>
-               <input type="text" name="tema" id="itema" size="25"></p>
-            <h2>Selecione o tipo de entrada:</h2>
-            <ul>
-                <li>Entrada cheia</li>
-                <li>Meia entrada</li>
-                <li>Isenção</li>
-            </ul>
-            <p><label for="ientrada">Entrada:</label>
-               <input type="text" name="entrada" id="ientrada"></p>
-            <a href="ingresso.html">ENVIAR</a>
-        </form>
+        <div>
+            <h1>BILHETERIA MUSEU MULTITEMÁTICO</h1>
+            <form autocomplete="off" action="cadastro.php" method="post">
+                <p><label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome"></p>
+                <p><label for="isobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="isobrenome"></p>
+                <p><label for="idade">Idade:</label>
+                   <input type="text" name="idade" id="idade"></p>
+                <h2>Escolha o tema que deseja visitar:</h2>
+                <ul>
+                    <li>100 anos da semana da Arte moderna</li>
+                    <li>150 anos de Santos Dumont</li>
+                    <li>Jogos Olímpicos de Paris 2024</li>
+                    <li>Tema a definir</li>
+                </ul>
+                <p><label for="itema">Tema:</label>
+                   <input type="text" name="tema" id="itema" size="25"></p>
+                   <h2>Selecione o período desejado:</h2>
+                   <ul>
+                       <li>Manhã - 9:00</li>
+                       <li>Tarde - 15:00</li>
+                       <li>Noite - 18:00</li>
+                   </ul>
+                   <p><label for="ihora">Período:</label>
+                   <input type="text" name="hora" id="ihora"></p>
+                   <h2>Selecione o tipo de entrada:</h2>
+                   <ul>
+                       <li>Inteira</li>
+                       <li>Meia - Estudante</li>
+                       <li>Meia - PCD</li>
+                       <li>Meia - Idoso</li>
+                       <li>Meia - Professor de Rede Pública</li>
+                       <li>Isenção</li>
+                   </ul>
+                   <p><label for="ientrada">Entrada:</label>
+                      <input type="text" name="entrada" id="ientrada"></p>
+                   <h2>Selecione o método de pagamento</h2>
+                   <ul>
+                       <li>PIX</li>
+                       <li>Cartão de crédito</li>
+                       <li>Cartão de débito</li>
+                       <li>Boleto</li>
+                   </ul>
+                   <p><label for="ipgamento">Pagamento:</label>
+                   <input type="text" name="pagamento" id="ipagamento"></p>
+                <a href="ingresso.html">ENVIAR</a>
+            </form>
+        </div>
     </main>
 </body>
 </html>
